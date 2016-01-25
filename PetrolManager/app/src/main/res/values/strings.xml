@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">PetrolSellingPoint</string>
+    <string name="act_name">Petrol Selling Point</string>
+    <string name="action_settings">Settings</string>
+    <string name="unmHint">Type UserName</string>
+    <string name="unmLabel">User Name: </string>
+    <string name="pwLabel">ENTER PIN CODE</string>
+    <string name="pwHint">Type your PIN</string>
+    <string name="companyName">Type Company Name</string>
+    <string name="registerDevice">Record Device</string>
+
+    <string name="loginBtn">LOGIN →</string>
+    <string name="regdev">Register Device</string>
+    <string name="title_activity_register_device">RegisterDevice</string>
+    <string name="title_activity_user_register">SignUp</string>
+    <string name="title_activity_station_manager">Station Manager</string>
+
+    <!-- Station manager string resources -->
+    <string name="welcome">Welcome</string>
+    <string name="Content">Management board</string>
+    <string name="title_activity_manage_employees">Employees</string>
+    <string name="title_activity_manage_transactions">Transactions</string>
+    <string name="title_activity_statements">Statements</string>
+    <string name="title_activity_display_employee">Employee</string>
+    <string name="title_activity_seller">Selling Point</string>
+    <string name="title_activity_saling">Sale</string>
+    <string name="title_activity_emp_statement">Statement</string>
+
+    <string name="splabel">Select Product</string>
+
+    <!-- Pumpist string resources -->
+    <string name="qtyhint">0</string>
+    <string name="tel">Telephone</string>
+    <string name="tin">Tin number</string>
+    <string name="name">Name</string>
+    <string name="txtpaymode">Pay Mode</string>
+    <string name="txtproduct">Select Product</string>
+    <string-array name="payitems">
+        <item>Cash</item>
+        <item>MoMo</item>
+        <item>Tigo_Cash</item>
+        <item>Airtel_Money</item>
+        <item>Bank_Wire</item>
+        <item>Visa_Card</item>
+    </string-array>
+    <string name="title_activity_personal_sale">Personal</string>
+    <string name="title_activity_company_sale">Company</string>
+    <string name="amounthint">0</string>
+    <string name="telnum">07</string>
+    <string name="salebtn">PAY NOW</string>
+    <string name="reconslabel">List of transaction</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bck">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="65dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/monitor"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/pwLabel"
+                android:gravity="center"
+                android:typeface="normal"
+                android:textStyle="bold|normal"
+                android:textColor="#012c92" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:inputType="phone"
+                android:gravity="center"
+                android:hint="@string/pwHint"
+                android:background="@drawable/edit_text_shape"
+                android:id="@+id/pw"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="14dp"
+                android:width="300dp"
+                android:textSize="30dp"
+                android:singleLine="true"
+                android:longClickable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="true"
+                android:textIsSelectable="true"
+                android:textCursorDrawable="@drawable/maincursor"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/button_shape"
+                android:text="@string/loginBtn"
+                android:enabled="true"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:id="@+id/login"
+                android:textColor="#ffffff"
+                android:longClickable="false" />
+        </TableRow>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

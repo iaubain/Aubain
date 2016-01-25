@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.owner.petrolmanager.PersonalSale">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:id="@+id/monitor" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="PRODUCTS"
+                android:gravity="center"
+                android:textColor="#95000000"
+                android:textSize="25dp"
+                android:id="@+id/lblproducts" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prodlayout">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/productscroll" >
+            <RadioGroup
+                android:id="@+id/productsradio"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:longClickable="false" />
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true">
+                    <EditText
+                        android:layout_width="155dp"
+                        android:layout_height="80dp"
+                        android:inputType="phone"
+                        android:textStyle="bold|normal"
+                        android:hint="@string/amounthint"
+                        android:gravity="center"
+                        android:background="@drawable/amnt_qty"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="10dp"
+                        android:textSize="30dp"
+                        android:id="@+id/amnt"
+                        android:longClickable="false"
+                        android:maxLength="7"
+                        android:textIsSelectable="true"
+                        android:textCursorDrawable="@drawable/cursorcolor"
+                        android:textColorHint="#FFFFFF"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tableRow3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Amount"
+                        android:textColor="#ffffff"
+                        android:textStyle="normal" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true">
+                    <EditText
+                        android:layout_width="155dp"
+                        android:layout_height="80dp"
+                        android:inputType="phone"
+                        android:gravity="center"
+                        android:textStyle="bold|normal"
+                        android:hint="@string/qtyhint"
+                        android:background="@drawable/amnt_qty"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="10dp"
+                        android:textSize="30dp"
+                        android:id="@+id/qty"
+                        android:longClickable="false"
+                        android:maxLength="10"
+                        android:textIsSelectable="true"
+                        android:textCursorDrawable="@drawable/cursorcolor"
+                        android:textColorHint="#FFFFFF"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="210dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Quantity"
+                        android:textColor="#ffffff"
+                        android:textStyle="normal" />
+
+                </TableRow>
+
+            </RelativeLayout>
+
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="phone"-->
+                <!--android:textStyle="bold|normal"-->
+                <!--android:text="@string/amounthint"-->
+                <!--android:id="@+id/amnt" />-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:text="PAYMENT MODE"
+                android:textColor="#95000000"
+                android:textSize="25dp"
+                android:id="@+id/lblpmode" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payscroll" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/pmodelayout">
+                <RadioGroup
+                    android:id="@+id/pmodegroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:id="@+id/cash"
+                        android:background="@drawable/myradio"
+                        android:drawableTop="@drawable/cash"
+                        android:checked="true"
+                        android:longClickable="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:id="@+id/mtn"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/myradio"
+                        android:drawableTop="@drawable/mtn"
+                        android:checked="false"
+                        android:longClickable="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/myradio"
+                    android:id="@+id/tigo"
+                    android:drawableTop="@drawable/tigo"
+                    android:longClickable="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="2dp"
+                        android:id="@+id/airtel"
+                        android:background="@drawable/myradio"
+                        android:drawableTop="@drawable/airtel"
+                        android:longClickable="false" />
+
+                </RadioGroup>
+            </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/sale_button_shape"
+                android:text="@string/salebtn"
+                android:textColor="#02b43a"
+                android:gravity="center"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                android:id="@+id/salebtn"
+                android:longClickable="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:longClickable="false">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fill Telephone Number"
+        android:textStyle="bold|normal"
+        android:textColor="#073291"
+        android:id="@+id/lbltel" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/tel"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_shape"
+        android:textStyle="bold|normal"
+        android:inputType="phone"
+        android:id="@+id/tel"
+        android:longClickable="false"
+        android:textIsSelectable="true"
+        android:textCursorDrawable="@drawable/maincursor"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/telconfirm"
+            android:background="@drawable/pop_button_shape"
+            android:textColor="#ffffff"
+            android:longClickable="false" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="CANCEL"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/telcancel"
+            android:background="@drawable/pop_button_shape_cancel"
+            android:textColor="#ffffff"
+            android:longClickable="false" />
+
+    </TableRow>
+</LinearLayout>
